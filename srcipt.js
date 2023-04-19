@@ -1,5 +1,6 @@
 const display = document.getElementById('display')
 const btn = document.getElementById('btn')
+const refresh = document.getElementById('refresh')
 
 const number = [Math.floor(Math.random() * 100)]
 let clicks = 0
@@ -24,3 +25,7 @@ btn.addEventListener('click', function () {
     document.querySelector('.container').style.background = 'red'
   }
 })
+
+refresh.addEventListener('click', function(){
+    location.reload();
+});

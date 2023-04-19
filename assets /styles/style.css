@@ -38,3 +38,11 @@ p {
 .inputs #display {
     font-size: 30;
 }
+
+#refresh {
+    width: 8vw;
+    height: 6vh;
+    margin-top: 1rem;
+    background: #aaa8a8;
+    border-color: #aaa8a8;
+}
