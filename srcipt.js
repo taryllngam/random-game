@@ -26,6 +26,6 @@ btn.addEventListener('click', function () {
   }
 })
 
-refresh.addEventListener('click', function(){
-    location.reload();
-});
+refresh.addEventListener('click', function() {
+  location.reload()
+})
