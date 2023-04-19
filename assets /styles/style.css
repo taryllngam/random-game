@@ -34,3 +34,7 @@ p {
     width: 8vw;
     height: 6vh;
 }
+
+.inputs #display {
+    font-size: 30;
+}

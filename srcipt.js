@@ -2,15 +2,27 @@ const display = document.getElementById('display')
 const btn = document.getElementById('btn')
 
 let number = [Math.floor(Math.random() * 100)]
+let clicks = 0;
+
 btn.addEventListener('click',function(){
     let input = document.getElementById('input').value;
     if(input == number){
         display.innerHTML = `YOU GUESED RIGHT, YOUR NUMBER WAS ${number}`
+        document.getElementById('display').style.color = 'GREEN'
     }
     else if(input < number){
         display.innerHTML = `YOU GUESED TOO LOW`
     }if(input > number){
         display.innerHTML = `YOU GUESED TOO HIGH`
     }
+    clicks += 1
+    if(clicks === 5) {
+        btn.disabled = true;
+        display.innerHTML = `YOU FAIL, PLEASE TRY AGAIN`
+        document.getElementById('display').style.color = 'red'
+    }
 })
+
+
+
 
