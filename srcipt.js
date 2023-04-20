@@ -2,20 +2,20 @@ const display = document.getElementById('display')
 const btn = document.getElementById('btn')
 const refresh = document.getElementById('refresh')
 
-const number = [Math.floor(Math.random() * 100)]
+const number = (Math.floor(Math.random() * 100))
 let clicks = 0
 
 btn.addEventListener('click', function () {
   const input = document.getElementById('input').value
   if (input === number) {
-    display.innerHTML = `YOU GUESED RIGHT, YOUR NUMBER WAS ${number}`
+    display.innerHTML = `YOU GUESSED RIGHT, YOUR NUMBER WAS ${number}`
     document.getElementById('display').style.color = 'white'
     document.querySelector('.container').style.background = 'green'
   } else if (input < number) {
-    display.innerHTML = 'YOU GUESED TOO LOW'
+    display.innerHTML = 'YOU GUESSED TOO LOW'
   }
-  if (input > number) {
-    display.innerHTML = 'YOU GUESED TOO HIGH'
+  else{
+    display.innerHTML = 'YOU GUESSED TOO HIGH'
   }
   clicks += 1
   if (clicks === 5) {
