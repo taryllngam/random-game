@@ -13,8 +13,7 @@ btn.addEventListener('click', function () {
     document.querySelector('.container').style.background = 'green'
   } else if (input < number) {
     display.innerHTML = 'YOU GUESSED TOO LOW'
-  }
-  else{
+  } else {
     display.innerHTML = 'YOU GUESSED TOO HIGH'
   }
   clicks += 1
